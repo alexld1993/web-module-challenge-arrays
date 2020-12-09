@@ -45,10 +45,11 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
+function copy(array){
+    return array.slice;
 }    
 
+console.log(copy(originalFlavors));
 
 
 
@@ -117,7 +118,7 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(array,index){
    return array[index];
 
-  
+  console.log( 'task 5:' , getFlavorByIndex(originalFlavors,3));
 }
 
 
