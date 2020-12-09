@@ -86,7 +86,7 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(string, array){
+function addFlavor(array, string){
   
     array.unshift(string);
       
