@@ -86,12 +86,13 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(array,newFlavor){
-
- return array.unshift();
+function addFlavor(string, array){
+    
+ array.unshift(string);
+  return array;
 }
-
-
+ 
+console.log("Rainbow Sherbert", originalFlavors);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -143,9 +144,14 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code */){
-    /*your code here*/
-}
+function removeFlavorByName(array , flavor){
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === flavor) {
+                array.splice(i, 1);
+            }
+        }
+        return array;
+    }
 
 
 
@@ -198,7 +204,7 @@ from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors and s
 Use the getRandomFlavors function and new arrays below to do the following:
     1. Receive the four arrays with all the differnet flavors (originalFlavors is above, the others are below)
     2. Randomly pick flavors from all four arrays
-    3. Return a new array called randomFlavors that has a lenght of 31
+    3. Return a new array called randomFlavors that has a length of 31
 
     For example: getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].
 */
