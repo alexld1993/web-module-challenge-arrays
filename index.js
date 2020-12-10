@@ -6,7 +6,7 @@ const originalFlavors = [
     "Black Walnut",
     "Burgundy Cherry",
     "Butterscotch Ribbon",
-    "Cherry Macaron",
+    "Cherry Macaroon",
     "Chocolate",
     "Chocolate Almond",
     "Chocolate Chip",
@@ -130,7 +130,7 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(array,index){
    return array[index];
 
-  console.log( 'task 5:' , getFlavorByIndex(originalFlavors,3));
+  console.log(getFlavorByIndex(originalFlavors,3));
 }
 
 
